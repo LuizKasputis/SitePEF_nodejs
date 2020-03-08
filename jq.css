@@ -1,0 +1,221 @@
+
+.Sforca{
+	width: 180px;
+	height: 150px;
+	float:left;
+}
+
+.SapoioSimples{
+	width: 60px;
+	height: 150px;
+	float:left;
+}
+
+.SapoioDuplo{
+	width: 60px;
+	height: 150px;
+	float:left;
+}
+
+.SforcaRotaticional{
+	width: 100px;
+	height: 150px;
+	float:left;
+}
+
+
+.SDelete{
+	width: 60px;
+	height: 150px;
+	float:left;
+}
+
+
+.forca{
+	width: 50px;
+	height: 50px;
+	background:#f2f2f2;
+  	border: 1.5px solid #b8b894;
+  	border-radius: 5px;
+  	float:left;
+}
+
+.forcaS{}
+.apoioS{}
+.apoioD{}
+
+.add{
+	position: absolute;
+}
+
+
+.rotation{
+	width: 25px;
+	height: 25px;
+	margin:10px;
+	float:left;
+	background:#f2f2f2;
+	margin-bottom:15px;
+  	border: 1.5px solid #b8b894;
+  	border-radius: 5px
+}
+
+#inputForca{
+	width: 50px;
+	height: 26px;
+	background-color: 	#f2f2f2;
+	border: 1px solid #a6a6a6;
+  	border-radius: 3px;
+  	box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0,0,0,0.5);
+}
+
+#inputDistancia{
+	width: 50px;
+	height: 26px;
+	background-color: 	#f2f2f2;
+	border: 1px solid #a6a6a6;
+  	border-radius: 3px;
+  	box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0,0,0,0.5);
+}
+
+#barra{
+	margin:auto;
+	width:550px;
+	margin-top:160px;
+
+}
+
+#effect{
+	width: 100%;
+	border: 1px solid #8a4419;
+ 	border-style: inset;
+}
+
+#conteudo{
+	width: 600px;
+	border: 1.25px solid #b8b894;
+	padding:10px;
+	padding-bottom: 50px;
+	border-radius: 10px;
+}
+
+
+.Delete{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin-left: 250px;
+	background:#f2f2f2;
+  	border: 1.5px solid #b8b894;
+  	border-radius: 5px
+}
+
+.apoioSimples{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin-left: 60px;
+	background:#f2f2f2;
+  	border: 1.5px solid #b8b894;
+  	border-radius: 5px
+}
+
+.apoioDuplo{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin-left: 0px;
+	background:#f2f2f2;
+  	border: 1.5px solid #b8b894;
+  	border-radius: 5px
+}
+
+.divInput{
+	height: 50px;
+	border: 1.5px solid #3d5c5c;
+	margin-right:25px;
+	background: #a1a1a1;
+	border-radius: 5px;
+	float:right;
+	font-size: 12px;
+	text-align: right;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.divDistancia{
+	height: 50px;
+	border: 1.5px solid #3d5c5c;
+	margin-right:90px;
+	background: #a1a1a1;
+	border-radius: 5px;
+	float:right;
+	font-size: 12px;
+	text-align: right;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#textoDistancia{
+	float:left;
+	font-size: 10px;
+	padding:0 8px;
+	text-align:center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.texto{
+	float:left;
+	font-size: 12px;
+	padding:0 8px;
+	text-align:center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#solution{
+	border: 1.5px solid #b8b894;
+  	border-radius: 5px;
+  	background:white;
+  	width: 350px;
+  	height: 150px;
+  	margin:auto;
+}
+
+.ans{
+	margin:0;
+	padding:2px;
+	font-size:60px;
+	color:#eeeeee;
+}
+
+#ans1{
+	padding:0;
+	font-weight: lighter;
+	color:#424242;
+}
+#ans2{
+	padding:0;
+	font-weight: lighter;
+	color:#424242;
+}
+#ans3{
+	padding:0;
+	font-weight: lighter;
+	color:#424242;
+}
+input{
+	text-align: center;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
