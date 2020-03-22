@@ -19,6 +19,7 @@
   "homepage": "https://github.com/LuizKasputis/Calculo-rea-es-de-apoio-em-JS#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "marko": "4.13.4-1"
+    "marko": "4.13.4-1",
+    "mysql": "^2.18.1"
   }
 }
