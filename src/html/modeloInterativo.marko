@@ -25,21 +25,21 @@
   <div id="menu" class="container">
     <div id="links">
 
-      <a class="dp btn dropBut" href="http://pef3100-com.umbler.net/">Home</a>
+      <a class="dp btn dropBut" >Home</a>
         <div class="dropagem">
           <a id="resumosBut" class="dp btn dropBut">Educação</a>
           <div id="listaResumos" class="dp droplist" >
-              <a href="{% url 'lorem1' %}">Conceitos</a>
-              <a href="{% url 'lorem1' %}">Estruturas 2D</a>
-              <a href="{% url 'lorem1' %}">Estruturas 3D </a>
+              <a href="">Conceitos</a>
+              <a href="">Estruturas 2D</a>
+              <a href="">Estruturas 3D </a>
             </div>
           </div>
           <div class="dropagem">
           <a id="educacaoBut" class=" btn dropBut" href="{% url 'pratique' %}">Pratique</a>
           </div>
-        <a href="#" class="dp btn dropBut">Modelo Interativo</a>
+        <a href="http://pef3100-com.umbler.net/" class="dp btn dropBut" >Modelo Interativo</a>
         <a href="http://pef3100-com.umbler.net/notas" class="dp btn dropBut">Notas</a>
-        
+
       </div>
   </div>
 </nav>
@@ -98,25 +98,30 @@
         </div>
 
       </div>
-      
-      <h4 style="text-align: center;"> Como utilizar calculo de apoios em uma BARRA</h4>
-      <h4 style="text-align: justify;"> &nbsp &nbsp &nbsp &nbsp Passando o mouse sobre a barra é possível verificar em que ponto será aplicado uma força, apoio simples e apoio duplo</h4>
-      <h4 style="text-align: justify;"> &nbsp &nbsp &nbsp &nbsp Para selecionar um elemento, a componente selecionada deve permanecer na cor verde claro. Após isso deverá clicar na barra no ponto que deseja aplicar aquele elemento. Lembrando que no caso da força é necessário selecionar uma intensidade. </h4>
-      <h4 style="text-align: justify;"> &nbsp &nbsp &nbsp &nbsp Após colocar os componentes necessárias, é possível clicar no botão solve que dirá 3 respostas possíveis: </h4>
-      <h4 style="text-align: justify;"> &nbsp &nbsp &nbsp &nbsp Estrutura hipostática é aquela em que o número de reações é inferior ao de equações da estática </h4>
-      <h4 style="text-align: justify;"> &nbsp &nbsp &nbsp &nbsp As estruturas isostáticas são aquelas em que o número de reações de apoio é igual ao número de equações de equilíbrio disponíveis, ou seja, o sistema é determinado. </h4>
-      <h4 style="text-align: justify;"> &nbsp &nbsp &nbsp &nbsp O sistema hiperstático são aquelas em que o número de reações de apoio é maior que o número de equações de equilíbrio disponíveis, ou seja, o sistema é indeterminado. </h4>
-       <h4 style="text-align: justify;"> &nbsp &nbsp &nbsp &nbsp Para deletar algum elemento, selecione a caixa DELETE e clicar no elemento que deseja apagar. </h4>
+
+        <h4 style="text-align: center;"> Como utilizar calculo de apoios em uma barra</h4>
+
+         <div  class="col-md-8" id="explicacao">
+            <span>
+            Passando o mouse sobre a barra é possível verificar em que ponto será aplicado uma força, apoio simples e apoio duplo.Para selecionar um elemento, a componente selecionada deve permanecer na cor verde claro. Após isso deverá clicar na barra no ponto que deseja aplicar aquele elemento. Lembrando que no caso da força é necessário selecionar uma intensidade.Após colocar os componentes necessárias, é possível clicar no botão solve que dirá 3 respostas possíveis:
+            Estrutura hipostática é aquela em que o número de reações é inferior ao de equações da estática.
+            As estruturas isostáticas são aquelas em que o número de reações de apoio é igual ao número de equações de equilíbrio disponíveis, ou seja, o sistema é determinado.
+            O sistema hiperstático são aquelas em que o número de reações de apoio é maior que o número de equações de equilíbrio disponíveis, ou seja, o sistema é indeterminado. 
+            Para deletar algum elemento, selecione a caixa DELETE e clicar no elemento que deseja apagar.
+            </span>
+        </div>
+    
     </div>
   </div>
 </div>
-
   <div>
-    <footer id="direitos">
-      <strong>Todos os direitos Reservados Grupo de PEF</strong>
-    </footer>
+    
+  </div>
 
+  <div id="direitos">
+    <strong>Disciplina PEF3100</strong>
   </div>
 
 </body>
+
 </html>

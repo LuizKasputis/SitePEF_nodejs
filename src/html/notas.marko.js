@@ -43,7 +43,7 @@ function render(input, out, __component, component, state) {
       "</td></tr>");
   });
 
-  out.w("</tbody></table></div><footer id=\"direitos\"><strong>Todos os direitos Reservados Grupo de PEF</strong></footer>");
+  out.w("</tbody></table></div><footer id=\"direitos\"><strong>Disciplina PEF3100</strong></footer>");
 
   init_components_tag({}, out);
 

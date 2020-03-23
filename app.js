@@ -41,7 +41,7 @@ app.get('/notas', function(req, resp){
 
 app.get('/', function(req, resp){
     resp.marko(
-    				require('./src/html/modeloInterativo.marko')
+    			require('./src/html/modeloInterativo.marko')
     			   );
 });
                                 
