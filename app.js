@@ -22,20 +22,19 @@ app.get('/notas', function(req, resp){
 	});
 
 
-
 	var db = con.connect(function(err) {
 		  if (err) throw err;
 		  var db = con.query("SELECT * FROM alunos", function (err, result, fields) {
 		    if (err) throw err;
 		    resultado = result;
-		  });
-	});
 
-
-    resp.marko(
+		    resp.marko(
     			require('./src/html/notas.marko'),{
     				alunos : resultado
     			});
+
+		  });
+	});
 });
 
 
