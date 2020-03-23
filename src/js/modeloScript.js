@@ -514,8 +514,9 @@ $(document).ready(() => {
 			}
 
  			/*Posição do apoio*/
- 			function addApoio(x, y, tipo, index){
- 				var dis = (x)/550*5
+ 			function addApoio(distancia ,x, y, tipo, index){
+ 				var dis = (distancia)/750*5;
+ 				x = x+105;
  				if(dis <= 0){
                     dis = 0.00;
                 }
@@ -527,14 +528,15 @@ $(document).ready(() => {
  				objeto++;
  				$('<p  class="add" id="'+objeto+'" style="font-weight: bold; position:absolute; font-size: 10px; color:black; ">('+dis.toFixed(2)+'m)</p>').appendTo('.Sforca').animate({
 										'marginLeft' : x ,
-								 		'marginTop' : y + 45
+								 		'marginTop' : y + 60
 	  			}, 0);
 	  			objeto++;
  			}
 
 			/*Coloca força aplicada em uma determinada ponto da barra*/
-			function addForca(x,y,forca, index){
-				var dis = (x)/550*5;
+			function addForca(distancia, x,y,forca, index){
+				var dis = (distancia)/750*5;
+				x += 110;
                 if(dis <= 0){
                     dis = 0.00;
                 }
@@ -549,19 +551,19 @@ $(document).ready(() => {
 				}
 				if(dirAtual == 1){
 					$('<p class="forcaS" id="'+objeto+'" style="font-weight: bold; position:absolute; font-size: 10px; color:black;">('+forca+'N,'+dis.toFixed(2)+'m)</p>').appendTo('.Sforca').animate({
-										'marginLeft' : x - 33,
+										'marginLeft' : x - 20,
 								 		'marginTop' : y + 35
 	  				}, 0);
 				}
 				if(dirAtual == 2){
 					$('<p class="forcaS" id="'+objeto+'" style="font-weight: bold; position:absolute; font-size: 9px; color:black;">('+forca+'N,'+dis.toFixed(2)+'m)</p>').appendTo('.Sforca').animate({
-										'marginLeft' : x - 18,
-								 		'marginTop' : y - 10
+										'marginLeft' : x - 6,
+								 		'marginTop' : y - 25
 	  				}, 0);
 				}
 				if(dirAtual == 3){
 					$('<p class="forcaS" id="'+objeto+'" style="font-weight: bold; position:absolute; font-size: 9px; color:black;">('+forca+'N,'+dis.toFixed(2)+'m)</p>').appendTo('.Sforca').animate({
-										'marginLeft' : x + 2,
+										'marginLeft' : x - 5,
 								 		'marginTop' : y + 35
 	  				}, 0);
 				}
@@ -702,8 +704,10 @@ $(document).ready(() => {
 					$('#barra').click(function(e){
 
 						if(fFLag1 == 1 && checkInput()){
-						
-							var x;
+							
+							var x, dis;
+
+							dis = e.offsetX;
 
 							if(dirAtual == 1 ){
 								x = e.offsetX - 10;
@@ -713,7 +717,7 @@ $(document).ready(() => {
 								x = e.offsetX + 6;
 							}
 
-							x = x - 115
+							x += 12;
 							var y = eixoY() + 10;
 
 							$('<img src="./src/imagens/seta.png" id="'+objeto+'" class="forca add forcaS" style="margin-left: -38px; background: transparent no-repeat; border: none ; transform: rotate('+angulo+'deg) ">').appendTo('.Sforca').animate({
@@ -721,7 +725,7 @@ $(document).ready(() => {
 							 		'marginTop' : y
   							}, 500);
 
-							addForca(e.offsetX ,y, forca, objeto);
+							addForca(dis, x ,y+15, forca, objeto);
 
 
 							$( palavra("forca", 0)).css({
@@ -770,15 +774,16 @@ $(document).ready(() => {
 					$('#barra').click(function(e) {
 						if(apoioS == 1){
 
-							var x = e.offsetX;
+							var distancia = e.offsetX;
+							var x = e.offsetX + 20;
 							var y = 170;
 
-							$('<img src="./src/imagens/apoiosimples.png" id="'+objeto+'" id="forca"'+forcas+' class="forca add apoioS" style="margin-left: 185px; background: transparent no-repeat; border: none ;">').appendTo('.Sforca').animate({
-							 		'marginLeft' : x - 110,
+							$('<img src="./src/imagens/apoiosimples.png" id="'+objeto+'" id="forca"'+forcas+' class="forca add apoioS" style="margin-left: 100px; background: transparent no-repeat; border: none ;">').appendTo('.Sforca').animate({
+							 		'marginLeft' : x,
 							 		'marginTop' : y
   							}, 500);
 
-                            addApoio(x,y,0, objeto);
+                            addApoio(distancia, x,y,0, objeto);
                             forcas++;
 
 							$( palavra("aS", 0)).attr('style', 'background: #f2f2f2;')
@@ -823,14 +828,16 @@ $(document).ready(() => {
 					$('#barra').click(function(e) {
 						if(apoioD == 1){
 
-							var x = e.offsetX;
+							var distancia = e.offsetX;
+							var x = e.offsetX + 20;
 							var y = 170;
 
-							 $('<img src="./src/imagens/apoioDuplo.png" id="'+objeto+'" class="forca add apoioD" id="forca"'+forcas+' style=" margin-left: 240px; background: transparent no-repeat; border: none ;">').appendTo('.Sforca').animate({
-							 		'marginLeft' : x - 110 ,
+							$('<img src="./src/imagens/apoioDuplo.png" id="'+objeto+'" id="'+objeto+'" class="forca add apoioD" id="forca"'+forcas+' style=" margin-left: 170px; background: transparent no-repeat; border: none ;">').appendTo('.Sforca').animate({							 		'marginLeft' : x,
 							 		'marginTop' : y
- 								}, 500);
-                            addApoio(x,y,1, objeto);
+  							}, 500);
+
+                            addApoio(distancia, x,y,1, objeto);                            
+
                             forcas++;
 
 							$( palavra("aD", 0)).attr('style', 'background: #f2f2f2;')
@@ -844,7 +851,7 @@ $(document).ready(() => {
 			$('#barra').mouseenter(function(e) {
 				$('#barra').mousemove(function( event ) {
 					var x = event.offsetX;
-					var dis = (x)/550*5;
+					var dis = (x)/750*5;
 				    $('#inputDistancia').text(dis.toFixed(2)+"m");
 				});
 			}).mouseleave(function() {

@@ -1,12 +1,12 @@
 
 .Sforca{
-	width: 180px;
+	width: 175px;
 	height: 150px;
 	float:left;
 }
 
 .SapoioSimples{
-	width: 60px;
+	width: 10px;
 	height: 150px;
 	float:left;
 }
@@ -25,7 +25,7 @@
 
 
 .SDelete{
-	width: 60px;
+	width: 70px;
 	height: 150px;
 	float:left;
 }
@@ -33,7 +33,7 @@
 
 .forca{
 	width: 50px;
-	height: 50px;
+	height: 60px;
 	background:#f2f2f2;
   	border: 1.5px solid #b8b894;
   	border-radius: 5px;
@@ -62,7 +62,7 @@
 
 #inputForca{
 	width: 50px;
-	height: 26px;
+	height: 35px;
 	background-color: 	#f2f2f2;
 	border: 1px solid #a6a6a6;
   	border-radius: 3px;
@@ -70,8 +70,9 @@
 }
 
 #inputDistancia{
-	width: 50px;
-	height: 26px;
+	width: 60px;
+	height: 35px;
+	padding: 5px;
 	background-color: 	#f2f2f2;
 	border: 1px solid #a6a6a6;
   	border-radius: 3px;
@@ -80,7 +81,7 @@
 
 #barra{
 	margin:auto;
-	width:550px;
+	width:700px;
 	margin-top:160px;
 
 }
@@ -92,46 +93,45 @@
 }
 
 #conteudo{
-	width: 600px;
+	margin:auto;
+	width: 1000px;
 	border: 1.25px solid #b8b894;
 	padding:10px;
-	padding-bottom: 50px;
+	padding-bottom: 10px;
 	border-radius: 10px;
 }
 
 
 .Delete{
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 	position: absolute;
-	margin-left: 250px;
+	margin-left: 610px;
 	background:#f2f2f2;
   	border: 1.5px solid #b8b894;
   	border-radius: 5px
 }
 
 .apoioSimples{
-	width: 50px;
-	height: 50px;
+	float:left;
+	width: 60px;
+	height: 60px;
 	position: absolute;
-	margin-left: 60px;
 	background:#f2f2f2;
   	border: 1.5px solid #b8b894;
   	border-radius: 5px
 }
 
 .apoioDuplo{
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	margin-left: 0px;
+	width: 60px;
+	height: 60px;
 	background:#f2f2f2;
   	border: 1.5px solid #b8b894;
   	border-radius: 5px
 }
 
 .divInput{
-	height: 50px;
+	height: 60px;
 	border: 1.5px solid #3d5c5c;
 	margin-right:25px;
 	background: #a1a1a1;
@@ -143,9 +143,9 @@
 }
 
 .divDistancia{
-	height: 50px;
+	height: 60px;
 	border: 1.5px solid #3d5c5c;
-	margin-right:90px;
+	margin-right:20px;
 	background: #a1a1a1;
 	border-radius: 5px;
 	float:right;
@@ -157,7 +157,7 @@
 #textoDistancia{
 	float:left;
 	font-size: 10px;
-	padding:0 8px;
+	padding:0 10px;
 	text-align:center;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }

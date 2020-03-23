@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "marko": "4.13.4-1",
-    "mysql": "^2.18.1",
-    "nodemon": "^2.0.2"
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
   }
 }
