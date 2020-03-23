@@ -39,7 +39,7 @@ app.get('/notas', function(req, resp){
 
 
 
-app.get('/', function(req, resp){
+app.get('/modeloInterativo', function(req, resp){
     resp.marko(
     			require('./src/html/modeloInterativo.marko')
     			   );
@@ -51,7 +51,7 @@ app.get('/pratique', function(req, resp){
     			   );
 });
 
-app.get('/educacao', function(req, resp){
+app.get('/', function(req, resp){
     resp.marko(
     			require('./src/html/educacao.marko')
     			   );

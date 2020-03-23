@@ -21,12 +21,12 @@ function render(input, out, __component, component, state) {
 
   component_globals_tag({}, out);
 
-  out.w("<nav class=\"navbar navbar-default navbar-fixed-top\"><div id=\"menu\" class=\"container\"><div id=\"links\"><a class=\"dp btn dropBut\">Home</a><div class=\"dropagem\"><a id=\"resumosBut\" class=\"dp btn dropBut\" href=\"http://pef3100-wiki.umbler.net/educacao\">Educação</a><div id=\"listaResumos\" class=\"dp droplist\"><a href=\"\">Conceitos</a><a href=\"\">Estruturas 2D</a><a href=\"\">Estruturas 3D </a></div></div><div class=\"dropagem\"><a id=\"educacaoBut\" class=\" btn dropBut\" href=\"http://pef3100-wiki.umbler.net/pratique\">Pratique</a></div><a href=\"http://pef3100-wiki.umbler.net/\" class=\"dp btn dropBut\">Modelo Interativo</a><a href=\"http://pef3100-wiki.umbler.net/notas\" class=\"dp btn dropBut\">Notas</a></div></div></nav><div id=\"title1\" class=\"jumbotron text-center\"></div><div class=\"notas\"><div class=\"form-group pull-right\"><input type=\"text\" class=\"search form-control\" id=\"digitacao\" placeholder=\"Digite seu número USP\"></div><span class=\"counter pull-right\"></span><table class=\"table table-hover table-bordered results\" id=\"tabela-cor\"><thead><tr><th class=\"col-md-2 col-xs-3\">Número USP</th><th class=\"col-md-5 col-xs-3\">Nome</th><th class=\"col-md-5 col-xs-3\">Curso</th><th class=\"col-md-3 col-xs-3\">P1</th><th class=\"col-md-3 col-xs-3\">P2</th><th class=\"col-md-3 col-xs-3\">Média</th></tr><tr class=\"warning no-result\"><td colspan=\"4\"><i class=\"fa fa-warning\"></i> No result</td></tr></thead><tbody id=\"busca\">");
+  out.w("<nav class=\"navbar navbar-default navbar-fixed-top\"><div id=\"menu\" class=\"container\"><div id=\"links\"><div class=\"dropagem\"><a id=\"resumosBut\" class=\"dp btn dropBut\" href=\"http://pef3100-wiki.umbler.net/\">Home</a><div id=\"listaResumos\" class=\"dp droplist\"><a href=\"\">Conceitos</a><a href=\"\">Estruturas 2D</a><a href=\"\">Estruturas 3D </a></div></div><div class=\"dropagem\"><a id=\"educacaoBut\" class=\" btn dropBut\" href=\"http://pef3100-wiki.umbler.net/pratique\">Pratique</a></div><a href=\"http://pef3100-wiki.umbler.net/modelointerativo\" class=\"dp btn dropBut\">Modelo Interativo</a><a href=\"http://pef3100-wiki.umbler.net/notas\" class=\"dp btn dropBut\">Notas</a></div></div></nav><div id=\"title1\" class=\"jumbotron text-center\"></div><div class=\"notas\"><div class=\"form-group pull-right\"><input type=\"text\" class=\"search form-control\" id=\"digitacao\" placeholder=\"Digite seu número USP\"></div><span class=\"counter pull-right\"></span><table class=\"table table-hover table-bordered results\" id=\"tabela-cor\"><thead><tr><th class=\"col-md-2 col-xs-3\">Número USP</th><th class=\"col-md-5 col-xs-3\">Nome</th><th class=\"col-md-5 col-xs-3\">Curso</th><th class=\"col-md-3 col-xs-3\">P1</th><th class=\"col-md-3 col-xs-3\">P2</th><th class=\"col-md-3 col-xs-3\">Média</th></tr><tr class=\"warning no-result\"><td colspan=\"4\"><i class=\"fa fa-warning\"></i> No result</td></tr></thead><tbody id=\"busca\">");
 
-  var for__48 = 0;
+  var for__47 = 0;
 
   marko_forEach(data.alunos, function(aluno) {
-    var keyscope__49 = "[" + ((for__48++) + "]");
+    var keyscope__48 = "[" + ((for__47++) + "]");
 
     out.w("<tr><td class=\"numeroUSP\">" +
       marko_escapeXml(aluno.nUSP) +
@@ -47,7 +47,7 @@ function render(input, out, __component, component, state) {
 
   init_components_tag({}, out);
 
-  await_reorderer_tag({}, out, __component, "59");
+  await_reorderer_tag({}, out, __component, "58");
 
   out.w("</body></html>");
 }

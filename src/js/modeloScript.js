@@ -520,7 +520,7 @@ $(document).ready(() => {
  				if(dis <= 0){
                     dis = 0.00;
                 }
- 				if(+tipo == 0){
+ 				if(tipo == 0){
  					conAS.add(dis.toFixed(2), index);
  				}else{
  					conAD.add(dis.toFixed(2), index);

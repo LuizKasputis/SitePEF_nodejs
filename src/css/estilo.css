@@ -337,7 +337,16 @@ footer{
 
 #panel1 {
 	background-color: #e6e6e6;
-	margin-top: 8%;
+	float:right;
+}
+
+#primeiro-texto{
+	margin-top:5%;
+	text-align: justify;
+}
+
+#segundo-texto{
+	text-align: justify;
 }
 
 .panel-heading{
