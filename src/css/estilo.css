@@ -28,6 +28,17 @@ h4 {
   margin-bottom: 30px;
 } 
 
+#footer-notas{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width:100%;
+	background:#CCC ;
+	width: 100%;
+	text-align: center;
+	padding:10px;
+}
+
 .imagem-pratique{
 	margin: 15px 0px 15px 0px;
 }
