@@ -44,6 +44,19 @@ app.get('/', function(req, resp){
     			require('./src/html/modeloInterativo.marko')
     			   );
 });
+
+app.get('/pratique', function(req, resp){
+    resp.marko(
+    			require('./src/html/pratique.marko')
+    			   );
+});
+
+app.get('/educacao', function(req, resp){
+    resp.marko(
+    			require('./src/html/educacao.marko')
+    			   );
+});
+
                                 
 var port = process.env.PORT || 3000;
 app.listen(port, function () {
