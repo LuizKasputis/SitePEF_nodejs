@@ -16,9 +16,9 @@ app.get('/notas', function(req, resp){
 	var con = mysql.createConnection({
 	  host: "mysql669.umbler.com",
 	  port: "41890",
-	  user: "lulizao",
-	  password: "zaninill1",
-	  database: "notas_alunos"
+	  user: "sql-bd-luiz",
+	  password: "capivara123",
+	  database: "sql-bd-luiz"
 	});
 
 
