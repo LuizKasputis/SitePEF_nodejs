@@ -1,0 +1,25 @@
+
+.notas{
+	padding: 20px;
+	margin:10px;
+}
+
+
+
+.results tr[visible='false'],
+.no-result{
+  display:none;
+}
+
+.results tr[visible='true']{
+  display:table-row;
+}
+
+.counter{
+  padding:8px; 
+  color:#ccc;
+}
+
+#tabela-cor{
+	background-color:#fffafa;
+}

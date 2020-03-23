@@ -25,7 +25,7 @@ app.get('/notas', function(req, resp){
 
 	var db = con.connect(function(err) {
 		  if (err) throw err;
-		  var db = con.query("SELECT * FROM aluno", function (err, result, fields) {
+		  var db = con.query("SELECT * FROM alunos", function (err, result, fields) {
 		    if (err) throw err;
 		    resultado = result;
 		  });
@@ -33,7 +33,7 @@ app.get('/notas', function(req, resp){
 
 
     resp.marko(
-    			require('./notas.marko'),{
+    			require('./src/html/notas.marko'),{
     				alunos : resultado
     			});
 });
@@ -42,7 +42,7 @@ app.get('/notas', function(req, resp){
 
 app.get('/', function(req, resp){
     resp.marko(
-    				require('./modeloInterativo.marko')
+    				require('./src/html/modeloInterativo.marko')
     			   );
 });
                                 
